@@ -1,0 +1,1 @@
+docker build -t worshop_image:1.0 .

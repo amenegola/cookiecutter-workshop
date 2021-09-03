@@ -1,0 +1,1 @@
+sudo docker run -p 8080:8080 worshop_image:1.0

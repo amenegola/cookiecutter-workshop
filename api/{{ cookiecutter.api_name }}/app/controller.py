@@ -1,5 +1,6 @@
 import os
 import json
+import pandas as pd
 from joblib import load
 from fastapi import FastAPI
 from pydantic import BaseModel

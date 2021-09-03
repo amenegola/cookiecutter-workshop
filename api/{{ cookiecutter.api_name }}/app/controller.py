@@ -19,7 +19,7 @@ class JsonIn(BaseModel):
     windspeed: float
 
 class JsonOut(BaseModel):
-    outcome: dict
+    output: float
 
 app = FastAPI()
 

@@ -22,7 +22,7 @@ class JsonOut(BaseModel):
 
 app = FastAPI()
 
-models = load("/source/models/model.joblib")
+models = load("models/model.joblib")
 
 @app.post("/api/v1/predictions", response_model=JsonOut)
 async def predict(input_model: JsonIn):

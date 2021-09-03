@@ -1,10 +1,10 @@
 FROM python:3.7
 
-WORKDIR /source
 ADD . /source/
+WORKDIR /source
 
 RUN pip install --upgrade pip
-RUN pip install -r /source/requirements.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 8080
 

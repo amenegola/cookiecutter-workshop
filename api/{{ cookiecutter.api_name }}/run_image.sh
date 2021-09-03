@@ -1,1 +1,1 @@
-sudo docker run -p 8080:8080 worshop_image:1.0
+sudo docker run -p 8080:8080 workshop_image

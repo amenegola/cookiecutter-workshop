@@ -27,7 +27,6 @@ models = load("/source/models/model.joblib")
 @app.post("/api/v1/predictions", response_model=JsonOut)
 async def predict(input_model: JsonIn):
     input_data = dict(input_model)
-
-    prediction = model.predict_proba(request=input_data)
-
+    df_input = pd.json_normalize(input_data)
+    prediction = model.predict(df_input)[0]
     return {"output": prediction}

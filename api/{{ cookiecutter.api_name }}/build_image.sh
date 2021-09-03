@@ -1,5 +1,5 @@
-docker build -t worshop_image:1.0 .
+docker build -t worshop_image .
 
-docker tag workshop-python gcr.io/static-smoke-324900/workshop-python
+docker tag worshop_image gcr.io/static-smoke-324900/worshop_image
 
-docker push gcr.io/static-smoke-324900/workshop-python:1.0
+docker push gcr.io/static-smoke-324900/worshop_image

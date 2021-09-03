@@ -6,14 +6,19 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class JsonIn(BaseModel):
-    age: int
-    gender: str
-    openAnswer: str
+    season: int
+    mnth: int
+    holiday: int
+    weekday: int
+    workingday: int
+    weathersit: int
+    temp: float
+    atemp: float
+    hum: float
+    windspeed: float
 
 class JsonOut(BaseModel):
-    modelVersion: str
-    trainingId: str
-    userOutcome: dict
+    outcome: dict
 
 app = FastAPI()
 

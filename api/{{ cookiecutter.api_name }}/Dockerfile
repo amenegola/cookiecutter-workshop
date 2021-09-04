@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
-CMD ["gunicorn","--bind","0.0.0.0:8080","-w","6","-k","uvicorn.workers.UvicornWorker","run:app"]
+CMD ["gunicorn","--bind","0.0.0.0:8080","-w","6","app.controller:app"]

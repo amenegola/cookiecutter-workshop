@@ -7,9 +7,8 @@ from dotenv import find_dotenv, load_dotenv
 
 
 @click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
 @click.argument('output_filepath', type=click.Path())
-def main(input_filepath, output_filepath):
+def main(output_filepath):
 
 
     logger = logging.getLogger(__name__)

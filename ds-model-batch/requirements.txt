@@ -2,3 +2,8 @@ mkdocs
 mkdocs-cinder
 cookiecutter
 pytest
+python-dotenv
+pandas
+numpy
+scikit-learn
+seaborn

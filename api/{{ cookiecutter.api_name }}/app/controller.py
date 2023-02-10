@@ -7,23 +7,15 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class JsonIn(BaseModel):
-    season: int
-    mnth: int
-    holiday: int
-    weekday: int
-    workingday: int
-    weathersit: int
-    temp: float
-    atemp: float
-    hum: float
-    windspeed: float
+    input_1: int
+    input_2: float
 
 class JsonOut(BaseModel):
     output: float
 
 app = FastAPI()
 
-model = load("models/model.joblib")
+model = load("models/model.pkl")
 
 @app.post("/api/v1/predictions", response_model=JsonOut)
 async def predict(input_model: JsonIn):

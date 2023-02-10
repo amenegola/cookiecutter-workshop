@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import click
 import logging
-import seaborn as sns
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
 
@@ -12,7 +11,7 @@ def main(output_filepath):
 
 
     logger = logging.getLogger(__name__)
-    logger.info('making final data set from raw data')
+    logger.info('data is loaded, cleaned and save to {}'.format(output_filepath))
 
 
 if __name__ == '__main__':
